@@ -1,7 +1,7 @@
 body {
     display: grid;
     height: 100vh;
-    grid-template: auto ifr auto / 300px 1fr auto;
+    grid-template: auto auto auto auto / 1fr auto;
   }
   
   header {
@@ -44,7 +44,7 @@ body {
     background-color:aqua;
   }
 
-  .left-sidebar {
+  .main-content {
     background: lightblue;
     grid-column: 1 / 2;
   }
@@ -54,7 +54,7 @@ body {
     grid-column: 2 / 3;
   }
   
-  .right-sidebar {
+  .aside-content {
     background: yellow;
     grid-column: 3 / 4;
   }
@@ -64,10 +64,5 @@ body {
     padding: 2rem;
     text-align: center;
     grid-column: 1 / 4;
-  }
-  
-  .left-sidebar,
-  .right-sidebar {
-    padding: 1rem;
   }
   
