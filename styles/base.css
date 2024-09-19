@@ -1,0 +1,157 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f4f8;
+    color: #333;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "title title title"
+        "nav nav nav"
+        "about about tools"
+        "footer footer footer";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: auto auto 1fr auto;
+    grid-gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Title */
+.header {
+    grid-area: title;
+    background-color: #6a1b9a; /* Purple color */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 2rem;
+}
+
+/* Navigation bar */
+.navbar {
+    grid-area: nav;
+    background-color: #283593; /* Blue color */
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* About Me section */
+.about-me {
+    grid-area: about;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.about-me img {
+    max-width: 100%;
+    border-radius: 50%;
+}
+
+.about-me h2 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #6a1b9a; /* Purple color */
+}
+
+.about-me p {
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+/* Utah section */
+.utah-section {
+    grid-column: span 2;
+    text-align: center;
+}
+
+.utah-section h2 {
+    color: #283593; /* Blue color */
+    margin: 20px 0;
+}
+
+.utah-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+.utah-content img {
+    max-width: 100%;
+}
+
+/* Web Dev Tools section */
+.web-dev-tools {
+    grid-area: tools;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.web-dev-tools h3 {
+    color: #283593; /* Blue color */
+    margin-bottom: 10px;
+}
+
+.web-dev-tools ul {
+    list-style: none;
+    padding: 0;
+}
+
+.web-dev-tools ul li a {
+    text-decoration: none;
+    color: #6a1b9a; /* Purple color */
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    grid-area: footer;
+    background-color: #6a1b9a; /* Purple color */
+    color: white;
+    text-align: center;
+    padding: 15px;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "title"
+            "nav"
+            "about"
+            "tools"
+            "footer";
+    }
+
+    .about-me {
+        grid-template-columns: 1fr;
+    }
+
+    .utah-content {
+        grid-template-columns: 1fr;
+    }
+}

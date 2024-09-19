@@ -3,62 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - David Carrillo - Personal webpage showcasing my skills and projects.">
-    <meta name="author" content="David Carrillo">
     <title>WDD 131 - Dynamic Web Fundamentals - David Carrillo</title>
-    <link rel="stylesheet" href="styles/layout.css"> <!-- Linking CSS file -->
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals, David Carrillo, Cyber Security Expert">
+    <meta name="author" content="David Carrillo">
+    <link rel="stylesheet" href="styles.css"> <!-- Link to the external CSS -->
 </head>
-<body>
-    <header>
+<body class="grid-container">
+    <!-- Header and Title -->
+    <header class="header">
         <h1>WDD 131 - Dynamic Web Fundamentals</h1>
-        <nav>
-            <ul>
-                <li><a href="https://www.linkedin.com/in/davidcarrilloamador" target="_blank">LinkedIn</a></li>
-                <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
-                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Favorite Scripture</a></li>
-                <li><a href="#">Final Project</a></li> <!-- Placeholder for final project -->
-            </ul>
-        </nav>
     </header>
 
-    <main>
-        <!-- Section 1: Profile -->
-        <section class="card">
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="https://www.linkedin.com/in/davidcarrilloamador" target="_blank">LinkedIn</a></li>
+            <li><a href="https://byui.instructure.com/" target="_blank">I-Learn</a></li>
+            <li><a href="https://www.churchofjesuschrist.org/study/scriptures" target="_blank">Scripture</a></li>
+            <li><a href="#" target="_blank">Final Project</a></li> <!-- Placeholder -->
+        </ul>
+    </nav>
+
+    <!-- About Me Section -->
+    <section class="about-me">
+        <div class="text-content">
             <h2>About Me</h2>
-            <div style="display: flex;">
-                <!-- Text on the left side of the profile picture -->
-                <div style="margin-right: 20px;">
-                    <p>My name is David Carrillo. I live in Utah, and I am passionate about technology. My goal is to become a Cyber Security Expert, helping to secure systems and protect valuable information.</p>
-                </div>
-                <!-- Profile picture -->
-                <img src="images/profile.jpg" alt="Profile Picture of David Carrillo" width="200"> <!-- Placeholder for your profile picture -->
-            </div>
-        </section>
+            <p>My name is David Carrillo. I live in Utah, and I want to become a Cyber Security Expert.</p>
+        </div>
+        <div class="profile-photo">
+            <img src="profile.jpg" alt="David Carrillo's Profile Photo"> <!-- Add your profile image here -->
+        </div>
+    </section>
 
-        <!-- Section 2: Utah Flag -->
-        <section class="card">
-            <h2>Utah</h2>
-            <div style="display: flex;">
-                <!-- Text on the left side, Utah flag on the right -->
-                <div style="margin-right: 20px;">
-                    <p>Utah is a fantastic place to live! It offers beautiful landscapes, from majestic mountains to unique deserts. The community is welcoming, and the state is known for its focus on outdoor activities and a high quality of life.</p>
-                </div>
-                <!-- Utah flag image -->
-                <img src="images/utah-flag.jpg" alt="Utah State Flag" width="200"> <!-- Placeholder for the Utah flag -->
+    <!-- Utah Section -->
+    <section class="utah-section">
+        <h2>Utah, United States</h2>
+        <div class="utah-content">
+            <div class="flag">
+                <img src="utah-flag.jpg" alt="Utah State Flag"> <!-- Add Utah Flag image here -->
             </div>
-        </section>
-    </main>
+            <div class="utah-description">
+                <p>Utah is a great place to live, known for its beautiful landscapes, outdoor adventures, and welcoming communities. The state offers a balanced lifestyle with a mix of city and nature.</p>
+            </div>
+        </div>
+    </section>
 
-    <footer>
-        <p>&copy; <span id="currentyear"></span> David Carrillo, Utah, US</p>
-        <p id="lastModified"></p> <!-- Will be populated with JavaScript for the last modified date -->
+    <!-- Web Dev Tools Section -->
+    <aside class="web-dev-tools">
+        <h3>Web Dev Tools</h3>
+        <ul>
+            <li><a href="https://www.w3schools.com" target="_blank">W3Schools</a></li>
+            <li><a href="https://www.udemy.com" target="_blank">Udemy</a></li>
+            <li><a href="https://css-tricks.com" target="_blank">Crazy CSS</a></li>
+        </ul>
+    </aside>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <p>&copy; <span id="currentyear"></span> David Carrillo, Utah, United States</p>
+        <p id="lastModified"></p>
     </footer>
 
+    <!-- JavaScript to dynamically update the current year and last modified date -->
     <script>
-        // JavaScript to dynamically display the current year
         document.getElementById("currentyear").textContent = new Date().getFullYear();
-        // JavaScript to display the last modified date
-        document.getElementById("lastModified").textContent = "Last Modified: " + document.lastModified;
+        document.getElementById("lastModified").textContent = "Last Updated: " + document.lastModified;
     </script>
 </body>
 </html>
