@@ -83,7 +83,7 @@ body {
 }
 
 .profile-photo img {
-  width: 120px;
+  width: 120px; /* Ajusta el tamaño de la imagen según tus necesidades */
   height: auto;
 }
 
