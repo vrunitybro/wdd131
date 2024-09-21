@@ -68,12 +68,22 @@ body {
 }
 
 /* About Me section */
+.about-me {
+  position: relative; /* Enable positioning for child elements */
+}
+
 .text-content {
   margin-bottom: 20px;
 }
 
+.profile-photo {
+  position: absolute; /* Position the photo absolutely */
+  top: 20px; /* Adjust top position */
+  right: 20px; /* Align to the right */
+}
+
 .profile-photo img {
-  width: 50px;
+  width: 120px;
   height: auto;
 }
 
@@ -115,6 +125,10 @@ body {
 .web-dev-tools ul {
   list-style: none;
   padding: 0;
+}
+
+.web-dev-tools li {
+  margin-bottom: 10px;
 }
 
 .web-dev-tools a {
