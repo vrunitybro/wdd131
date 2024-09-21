@@ -71,9 +71,14 @@
   </main>
 
   <footer class="footer">
-    <p>&copy; 2024 David Carrillo</p>
+    <p>&copy; <span id="currentyear"></span> David Carrillo, Utah, United States.</p>
+    <p id="lastModified"></p>
+
   </footer>
 
-  <script src="scripts/getdates.js" defer></script>
+  <script>
+    document.getElementById('currentyear').textContent = new Date().getFullYear();
+    document.getElementById('lastModified').textContent = "Last modified: " + document.lastModified;
+  </script>
 </body>
 </html>
