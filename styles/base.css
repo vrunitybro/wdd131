@@ -1,162 +1,133 @@
 /* Main grid container setup */
 html, body {
-    height: 100%;
-    margin: 0;
-  }
-  
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
-    background-color: #f0f0f0;
-  }
-  
-  .header, .navbar, .footer {
-    padding: 20px;
-  }
-  
-  /* Header section */
-  .header {
-    background-color: #4b0082; /* Purple background */
-    color: white;
-    text-align: center;
-  }
-  
-  .header h1, .header h2 {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .header h1 {
-    font-size: 1.5em;
-  }
-  
-  .header h2 {
-    font-size: 1.1em;
-  }
-  
-  /* Navigation bar */
-  .navbar {
-    background-color: #00008b; /* Dark blue background */
-    color: white;
-    text-align: center;
-  }
-  
-  .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-  }
-  
-  .navbar a {
-    color: white;
-    text-decoration: none;
-  }
-  
-  .navbar a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main content layout */
-  .main-content {
-    display: grid;
-    grid-template-columns: 2fr 1fr; /* 2/3 for About Me and Utah, 1/3 for Web Dev Tools */
-    gap: 20px;
-    padding: 20px;
-    flex: 1; /* Allow this section to grow and fill the available space */
-  }
-  
-  /* About Me section */
-  .about-me {
-    background-color: #e0e0ff; /* Light blue/purple background */
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Combined About Me and Utah United */
-  .text-content {
-    margin-right: 20px; /* Space between text and profile photo */
-  }
-  
-  .profile-photo {
-    display: flex;
-    justify-content: flex-end; /* Align the profile photo to the right */
-    margin-top: 20px; /* Space above the photo */
-  }
-  
-  .profile-photo img {
-    width: 150px;
-    height: auto; /* Removed circle shape */
-  }
-  
-  /* Utah Section */
-  .utah-section {
-    background-color: #e0e0ff; /* Light blue/purple background */
-    padding: 20px;
-  }
-  
-  .utah-section h2 {
-    text-align: center;
-    color: #00008b; /* Dark blue text */
-    padding: 10px;
-  }
-  
-  .utah-content {
-    display: flex;
-    align-items: center; /* Center items vertically */
-    gap: 20px; /* Space between flag and description */
-  }
-  
-  .utah-content .flag {
-    text-align: center; /* Center flag and its description */
-  }
-  
-  .utah-content .flag img {
-    width: 150px;
-    height: auto;
-  }
-  
-  .flag-description {
-    margin-top: 10px; /* Space between flag image and description */
-    color: #00008b; /* Dark blue text */
-    font-size: 0.9em; /* Slightly smaller font size */
-  }
-  
-  /* Web Dev Tools section */
-  .web-dev-tools {
-    background-color: #e0e0ff; /* Light blue/purple background */
-    padding: 20px;
-  }
-  
-  .web-dev-tools h3 {
-    background-color: #6a0dad;
-    color: white;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .web-dev-tools ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .web-dev-tools a {
-    color: #00008b; /* Dark blue */
-    text-decoration: none;
-  }
-  
-  .web-dev-tools a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Footer section */
-  .footer {
-    background-color: #00008b; /* Dark blue background */
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  
+  height: 100%;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.header, .navbar, .footer {
+  padding: 20px;
+}
+
+/* Header section */
+.header {
+  background-color: #4b0082; /* Purple background */
+  color: white;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+  padding: 10px 0;
+  font-size: 1.8em;
+}
+
+.navbar {
+  background-color: #00008b; /* Dark blue background */
+  color: white;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+}
+
+/* Main content layout */
+.main-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* 2/3 for About Me and Utah, 1/3 for Web Dev Tools */
+  gap: 20px;
+  padding: 20px;
+}
+
+.about-me, .utah-section, .web-dev-tools {
+  background-color: #e0e0ff; /* Light blue/purple background */
+  padding: 20px;
+}
+
+/* About Me section */
+.text-content {
+  margin-bottom: 20px;
+}
+
+.profile-photo img {
+  width: 150px;
+  height: auto;
+}
+
+/* Utah Section */
+.utah-section h2 {
+  text-align: center;
+  color: #00008b; /* Dark blue text */
+  padding-bottom: 10px;
+}
+
+.utah-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.utah-content .flag {
+  text-align: center;
+}
+
+.utah-content .flag img {
+  width: 150px;
+  height: auto;
+}
+
+.flag-description {
+  margin-top: 10px;
+  color: #00008b;
+  font-size: 0.9em;
+}
+
+/* Web Dev Tools section */
+.web-dev-tools h3 {
+  background-color: #6a0dad;
+  color: white;
+  padding: 10px;
+}
+
+.web-dev-tools ul {
+  list-style: none;
+  padding: 0;
+}
+
+.web-dev-tools a {
+  color: #00008b;
+  text-decoration: none;
+}
+
+.web-dev-tools a:hover {
+  text-decoration: underline;
+}
+
+/* Footer section */
+.footer {
+  background-color: #00008b; /* Dark blue background */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}

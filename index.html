@@ -3,58 +3,62 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>David Carrillo</title>
+  <meta name="description" content="This page showcases David Carrillo's work for the WDD 131 Dynamic Web Fundamentals course.">
+  <meta name="author" content="David Carrillo">
+  <title>WDD 131 - Dynamic Web Fundamentals - David Carrillo</title>
   <link rel="stylesheet" href="styles/base.css">
 </head>
 <body>
-  <div class="grid-container">
-    <div class="header">
-      <h1>David Carrillo</h1>
-      <h2>WDD 1313-Web Dev Fundamentals</h2>
-    </div>
-    <div class="navbar">
+  <header class="header">
+    <h1>WDD 131 - Dynamic Web Fundamentals - David Carrillo</h1>
+    <nav class="navbar">
       <ul>
         <li><a href="#">LinkedIn</a></li>
         <li><a href="#">I-Learn</a></li>
         <li><a href="#">Scripture</a></li>
         <li><a href="#">Final Project</a></li>
       </ul>
-    </div>
-    <div class="main-content">
-      <div class="about-me">
-        <div class="text-content">
-          <h2>About Me</h2>
-          <p>My name is David Carrillo, I live in Utah, and I want to become a Cyber Security Expert.</p>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <section class="about-me">
+      <div class="text-content">
+        <h2>About Me</h2>
+        <p>My name is David Carrillo, I live in Utah, and I want to become a Cyber Security Expert.</p>
+      </div>
+      <div class="profile-photo">
+        <img src="images/profile.jpg" alt="David Carrillo">
+      </div>
+    </section>
+
+    <section class="utah-section">
+      <h2>Utah United States</h2>
+      <div class="utah-content">
+        <div class="flag">
+          <img src="images/utah-flag.jpg" alt="Utah Flag">
+          <p class="flag-description">Utah State Flag</p>
         </div>
-        <div class="profile-photo">
-          <img src="images/DavidCarrilloz.jpg" alt="David Carrillo">
-        </div>
-        <div class="utah-section">
-          <h2>Utah United States</h2>
-          <div class="utah-content">
-            <div class="flag">
-              <img src="images/utah-flag.jpg" alt="Utah Flag">
-              <p class="flag-description">Utah State Flag</p>
-            </div>
-            <div class="utah-description">
-              <p>Utah is a great place to live due to its beautiful landscapes, outdoor recreational opportunities, and vibrant communities.</p>
-            </div>
-          </div>
+        <div class="utah-description">
+          <p>Utah is a great place to live due to its beautiful landscapes, outdoor recreational opportunities, and vibrant communities.</p>
         </div>
       </div>
-      <div class="web-dev-tools">
-        <h3>Web Dev Tools</h3>
-        <ul>
-          <li><a href="#">W3Schools</a></li>
-          <li><a href="#">Udemy</a></li>
-          <li><a href="#">Crazy CSS</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer">
-      <p>&copy; 2024 David Carrillo</p>
-    </div>
-  </div>
+    </section>
+
+    <section class="web-dev-tools">
+      <h3>Web Dev Tools</h3>
+      <ul>
+        <li><a href="#">W3Schools</a></li>
+        <li><a href="#">Udemy</a></li>
+        <li><a href="#">Crazy CSS</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2024 David Carrillo</p>
+  </footer>
+
   <script src="scripts/getdates.js" defer></script>
 </body>
 </html>
