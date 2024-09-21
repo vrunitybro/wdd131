@@ -2,7 +2,7 @@
 html, body {
   height: 100%;
   margin: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif; /* Use Google Font */
 }
 
 body {
@@ -58,6 +58,8 @@ body {
   grid-template-columns: 2fr 1fr; /* 2/3 for About Me and Utah, 1/3 for Web Dev Tools */
   gap: 20px;
   padding: 20px;
+  max-width: 1200px; /* Set max-width for main content */
+  margin: 0 auto; /* Center the content */
 }
 
 .about-me, .utah-section, .web-dev-tools {
