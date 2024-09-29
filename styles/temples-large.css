@@ -1,73 +1,138 @@
-/* General Styling */
-body {
-    font-family: 'Roboto', sans-serif;
+/* General reset */
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: 'Sansita', sans-serif;
+}
+
+/* Header and Navigation */
 header {
-    background-color: purple;
-    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
+    background-color: #6a0dad; /* Purple background */
+    color: white;
+    padding: 10px;
 }
 
-h1 {
-    margin: 0;
+header h1 {
+    font-size: 1.5rem;
 }
 
-nav {
-    display: none; /* Hidden in mobile view */
+.navbar {
+    display: flex; /* Navbar visible on large screens */
 }
 
-.hamburger {
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar li {
+    margin: 0 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
     display: block;
-    cursor: pointer;
 }
 
-.main-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    text-align: center;
-    padding: 1rem;
+.navbar a:hover {
+    background-color: #8a2be2;
 }
 
-h2 {
+/* Main Content */
+main {
+    padding: 20px;
+}
+
+main h2 {
     text-align: center;
     font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-figure {
+
+/* Grid layout for larger screens */
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: repeat(4, 1fr); /* 6 rows */
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.home-title{
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+main figure {
     margin: 0;
 }
 
-figure img {
+main img {
     width: 100%;
     height: auto;
+    border: 2px solid #ccc;
 }
 
-figcaption {
-    font-weight: bold;
-    padding: 0.5rem 0;
+main figcaption {
+    font-size: 1rem;
+    margin-top: 10px;
 }
 
-/* Footer styling */
+.temple-1{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.temple-2{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.temple-3{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.temple-4{
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.temple-5{
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.temple-6{
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.temple-7{
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.temple-8{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.temple-9{
+    grid-column: 3/4;
+    grid-row: 4/5;
+}
+
+/* Footer */
 footer {
-    background-color: purple;
+    background-color: #6a0dad;
     color: white;
     text-align: center;
-    padding: 1rem;
-    position: relative;
-}
-
-/* Hamburger menu active */
-nav.active {
-    display: block;
-}
-
-.hamburger.active:before {
-    content: 'X'; /* Change the symbol to 'X' when menu is active */
+    padding: 20px;
+    grid-column: 1/4;
+    grid-row: 6/9;
 }

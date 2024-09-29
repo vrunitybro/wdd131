@@ -1,5 +1,3 @@
-/* temples.css - Mobile First */
-
 /* General reset */
 * {
     margin: 0;
@@ -26,7 +24,7 @@ header h1 {
 }
 
 .navbar {
-    display: none; /* Initially hidden, to be shown with the hamburger */
+    display: none; /* Initially hidden */
 }
 
 .navbar ul {
@@ -94,14 +92,10 @@ footer {
     padding: 20px;
 }
 
-/* Show hamburger menu on mobile */
+/* Mobile hamburger menu display */
 @media (max-width: 640px) {
     .hamburger {
         display: block;
-    }
-
-    .navbar {
-        display: none;
     }
 
     .navbar.active {
