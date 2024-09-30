@@ -24,13 +24,12 @@ header h1 {
 }
 
 .navbar {
-    display: flex; /* Navbar visible on large screens */
+    display: flex;
 }
 
 .navbar ul {
     list-style-type: none;
     display: flex;
-    flex-direction: row;
 }
 
 .navbar li {
@@ -48,6 +47,13 @@ header h1 {
     background-color: #8a2be2;
 }
 
+/* Hamburger button (initially hidden on large screens) */
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 /* Main Content */
 main {
     padding: 20px;
@@ -59,24 +65,13 @@ main h2 {
     margin-bottom: 20px;
 }
 
-
 /* Grid layout for larger screens */
 .main-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: auto, repeat(5, 1fr) /* 6 rows */
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.home-title{
-    grid-column: 2/3;
-    grid-row: 1/2;
-}
-
-main figure {
-    margin: 0;
 }
 
 main img {
@@ -90,49 +85,36 @@ main figcaption {
     margin-top: 10px;
 }
 
-.temple-1{
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.temple-2{
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-.temple-3{
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-.temple-4{
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-.temple-5{
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-.temple-6{
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-.temple-7{
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-.temple-8{
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-.temple-9{
-    grid-column: 3/4;
-    grid-row: 4/5;
-}
-
 /* Footer */
 footer {
     background-color: #6a0dad;
     color: white;
     text-align: center;
     padding: 20px;
-    grid-column: 1/4;
-    grid-row: 6/9;
+}
+
+/* Responsive styles - when screen is less than 768px (mobile) */
+@media (max-width: 768px) {
+    /* Hamburger button visible on small screens */
+    .hamburger {
+        display: block;
+    }
+
+    .navbar ul {
+        flex-direction: column;
+        display: none;
+    }
+
+    .navbar ul.open {
+        display: flex;
+    }
+
+    /* Make images show in a single column */
+    .main-grid {
+        grid-template-columns: 1fr;
+    }
+
+    main h2 {
+        font-size: 1.5rem;
+    }
 }

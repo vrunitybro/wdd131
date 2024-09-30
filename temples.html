@@ -8,7 +8,6 @@
     <title>Temple Album</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles/temples.css">
     <link rel="stylesheet" href="styles/temples-large.css">
     <script src="scripts/temples.js" defer></script>
 </head>
@@ -24,56 +23,27 @@
                 <li><a href="#">Small</a></li>
             </ul>
         </nav>
-        <div class="hamburger">☰</div>
+        <div class="hamburger" onclick="toggleMenu()">☰</div> <!-- Hamburger button -->
     </header>
 
     <main class="main-grid">
         <h2 class="home-title">Home</h2>
-        <figure class="temple-1">
-            <img  src="images/sandiego-temple.jpg" alt="Temple Name">
-            <figcaption>San Diego Temple</figcaption>
-        </figure>
-        <figure class="temple-2">
-            <img  src="images/sandiego-temple.jpg" alt="Temple Name">
-            <figcaption>San Diego Temple</figcaption>
-        </figure>
-        <figure  class="temple-3">
-            <img  src="images/sandiego-temple.jpg" alt="Temple Name">
-            <figcaption>San Diego Temple</figcaption>
-        </figure>
-        <figure class="temple-4">
-            <img  src="images/sandiego-temple.jpg" alt="Temple Name">
-            <figcaption>San Diego Temple</figcaption>
-        </figure>
-        <figure class="temple-5">
-            <img  src="images/sandiego-temple.jpg" alt="Temple Name">
-            <figcaption>San Diego Temple</figcaption>
-        </figure>
-        <figure class="temple-6">
-            <img  src="images/sandiego-temple.jpg" alt="Temple Name">
-            <figcaption>San Diego Temple</figcaption>
-        </figure>
-        <figure class="temple-7">
-            <img  src="images/sandiego-temple.jpg" alt="Temple Name">
-            <figcaption>San Diego Temple</figcaption>
-        </figure>
-        <figure class="temple-8">
-            <img  src="images/sandiego-temple.jpg" alt="Temple Name">
-            <figcaption>San Diego Temple</figcaption>
-        </figure>
-        <figure class="temple-9">
-            <img  src="images/sandiego-temple.jpg" alt="Temple Name">
-            <figcaption>San Diego Temple</figcaption>
-        </figure>
-
-
+        <!-- Nine images as before -->
+        <figure class="temple-1"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
+        <figure class="temple-2"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
+        <figure class="temple-3"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
+        <figure class="temple-4"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
+        <figure class="temple-5"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
+        <figure class="temple-6"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
+        <figure class="temple-7"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
+        <figure class="temple-8"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
+        <figure class="temple-9"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
     </main>
 
     <footer class="footer">
         <p>&copy; <span id="currentyear"></span> David Carrillo, Utah, United States.</p>
         <p id="lastModified"></p>
     </footer>
-    
 
     <script src="scripts/getdates.js" defer></script>
 </body>
