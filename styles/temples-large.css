@@ -161,13 +161,13 @@ footer {
         display: flex;
     }
 
-    /* Make grid collapse into a single column */
+    /* How to have grid collapse into a single column */
     .main-grid {
         grid-template-columns: 1fr; /* Single column */
         grid-template-rows: auto; /* Allow rows to size themselves */
     }
 
-    /* Make all temple images stack vertically */
+    /* How to make all temple images stack vertically */
     .temple-1, .temple-2, .temple-3, .temple-4, .temple-5, .temple-6, .temple-7, .temple-8, .temple-9 {
         grid-column: 1 / -1; /* Make each item span the full width */
         grid-row: auto; /* Ensure rows are properly placed */
