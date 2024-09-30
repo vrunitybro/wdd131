@@ -60,18 +60,31 @@ main {
 }
 
 main h2 {
-    text-align: center;
+    text-align: center; /* Centering the title */
     font-size: 2rem;
     margin-bottom: 20px;
+    grid-column: 1 / -1; /* Span across all columns */
+    grid-row: 1; /* Place the title on the first row */
 }
 
 /* Grid layout for larger screens */
 .main-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-template-rows: auto; /* Allow rows to auto-size */
     gap: 20px;
     max-width: 1200px;
     margin: 0 auto;
+}
+
+.home-title {
+    grid-column: 1 / -1; /* Span across all columns */
+    grid-row: 1; /* Place the title on the first row */
+    text-align: center;
+}
+
+main figure {
+    margin: 0;
 }
 
 main img {
@@ -83,6 +96,44 @@ main img {
 main figcaption {
     font-size: 1rem;
     margin-top: 10px;
+}
+
+/* Temple image grid placement for large screens */
+.temple-1 {
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+.temple-2 {
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+.temple-3 {
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+.temple-4 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+.temple-5 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.temple-6 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}
+.temple-7 {
+    grid-column: 1/2;
+    grid-row: 4/5;
+}
+.temple-8 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.temple-9 {
+    grid-column: 3/4;
+    grid-row: 4/5;
 }
 
 /* Footer */
@@ -109,12 +160,22 @@ footer {
         display: flex;
     }
 
-    /* Make images show in a single column */
+    /* Make grid collapse into a single column */
     .main-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr; /* Single column */
+        grid-template-rows: auto; /* Allow rows to size themselves */
     }
 
+    /* Make all temple images stack vertically */
+    .temple-1, .temple-2, .temple-3, .temple-4, .temple-5, .temple-6, .temple-7, .temple-8, .temple-9 {
+        grid-column: 1 / -1; /* Make each item span the full width */
+        grid-row: auto; /* Ensure rows are properly placed */
+    }
+
+    /* Center the title for mobile as well */
     main h2 {
+        text-align: center;
         font-size: 1.5rem;
+        grid-column: 1 / -1; /* Ensure the title spans the whole width */
     }
 }
