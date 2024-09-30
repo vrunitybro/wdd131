@@ -96,6 +96,7 @@ main img {
 main figcaption {
     font-size: 1rem;
     margin-top: 10px;
+    text-align: center;
 }
 
 /* Temple image grid placement for large screens */
