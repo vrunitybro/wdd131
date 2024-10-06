@@ -13,7 +13,7 @@
     <main>
         <picture>
             <source srcset="images/mexico.webp" media="(min-width: 750px)">
-            <img src="images/mexico-sm.webp" alt="Madagascar Lemurs - Heroes" width="320" height="480">
+            <img src="images/mexico-sm.webp" alt="MexicoFlag" width="320" height="480">
         </picture>
 
         <section class="card data">
@@ -44,16 +44,27 @@
                 <span class="label">Internet TLD:</span> 
                 <span class="value">.mx</span>
             </div>
-            
-            
-            
         </section>
+
         <section class="card weather">
             <h2>Weather</h2>
-            <svg viewBox="0 0 500 500" xmLns="https://www.w3.org/2000/svg" id="weather-icon">
-                
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg" id="weather-icon">
+                <!-- SVG content goes here -->
             </svg>
-
+            
+            <div class="col-2">
+                <span class="label">Temperature:</span>
+                <span class="value">10 °C</span><br>
+            
+                <span class="label">Conditions:</span>
+                <span class="value">Partly cloudy</span><br>
+            
+                <span class="label">Wind:</span>
+                <span class="value">5 km/h</span><br>
+            
+                <span class="label">Wind Chill:</span>
+                <span class="value" id="wcf"></span>
+            </div>
         </section>
     </main>
 
