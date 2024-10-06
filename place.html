@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page showcases David Carrillo's work for the WDD 131 Dynamic Web Fundamentals course.">
+    <meta name="author" content="David Carrillo">
+    <title>Mexico</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/place.css">
+    <!-- <link rel="stylesheet" href="styles/temples.css"> -->
+    <script src="scripts/temples.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1 class="name-place">Mexico</h1>
+    </header>
+
+    <main class="main-grid">
+
+        <!-- Data Section -->
+    <div class="info-section">
+        <h2><strong>Data</strong></h2>
+        <p>
+            <strong>Population:</strong> 9.2 million (2020 estimate)<br>
+            <strong>Capital:</strong>Mexico City<br>
+            <strong>Languages:</strong>  Spanish<br>
+            <strong>Currency:</strong> Mexican Peso (MXN)<br>
+            <strong>Time Zone:</strong> Central Standard Time (CST) UTC-6<br>
+            <strong>Calling Code:</strong> +52<br>
+            <strong>Internet TLD:</strong> .mx
+        </p>
+    </div>
+
+    <!-- Weather Section -->
+    <div class="weather-section">
+        <h2><strong>Weather</strong></h2>
+        <img src="weather-icon.png" alt="Weather Icon"><br>
+        <strong>Temperature:</strong> 22°C<br>
+        <strong>Condition:</strong> Sunny<br>
+        <strong>Wind:</strong> 10 km/h<br>
+        <strong>Wind Chill:</strong> 20°C
+    </div>
+    
+
+        <figure class="temple-1"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
+
+    </main>
+
+    <footer class="footer">
+        <p>&copy; <span id="currentyear"></span> David Carrillo, Utah, United States.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/getdates.js" defer></script>
+</body>
+</html>
