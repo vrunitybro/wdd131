@@ -3,56 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="This page showcases David Carrillo's work for the WDD 131 Dynamic Web Fundamentals course.">
-    <meta name="author" content="David Carrillo">
-    <title>Mexico</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles/place.css">
-    <!-- <link rel="stylesheet" href="styles/temples.css"> -->
-    <script src="scripts/temples.js" defer></script>
+    <title>Mexicoi</title>
 </head>
 <body>
     <header>
-        <h1 class="name-place">Mexico</h1>
+        <h1>Mexico</h1>
     </header>
 
-    <main class="main-grid">
+    <main>
+        <picture>
+            <source srcset="images/mexico.webp" media="(min-width: 750px)">
+            <img src="images/mexico-sm.webp" alt="Madagascar Lemurs - Heroes" width="320" height="480">
+        </picture>
 
-        <!-- Data Section -->
-    <div class="info-section">
-        <h2><strong>Data</strong></h2>
-        <p>
-            <strong>Population:</strong> 9.2 million (2020 estimate)<br>
-            <strong>Capital:</strong>Mexico City<br>
-            <strong>Languages:</strong>  Spanish<br>
-            <strong>Currency:</strong> Mexican Peso (MXN)<br>
-            <strong>Time Zone:</strong> Central Standard Time (CST) UTC-6<br>
-            <strong>Calling Code:</strong> +52<br>
-            <strong>Internet TLD:</strong> .mx
-        </p>
-    </div>
+        <section class="card data">
 
-    <!-- Weather Section -->
-    <div class="weather-section">
-        <h2><strong>Weather</strong></h2>
-        <img src="weather-icon.png" alt="Weather Icon"><br>
-        <strong>Temperature:</strong> 22°C<br>
-        <strong>Condition:</strong> Sunny<br>
-        <strong>Wind:</strong> 10 km/h<br>
-        <strong>Wind Chill:</strong> 20°C
-    </div>
-    
+            <h2>Data</h2>
+            <div class="col-2">
+                <span class="label">Area:</span> 
+                <span class="value">587,041 sq km</span><br>
+                
+                <span class="label">Population:</span> 
+                <span class="value">27,691,018</span><br>
+                
+                <span class="label">Capital:</span> 
+                <span class="value">MExico City</span><br>
+                
+                <span class="label">Languages:</span> 
+                <span class="value">Spanish</span><br>
+                
+                <span class="label">Currency:</span> 
+                <span class="value">Peso, MX</span><br>
+                
+                <span class="label">Time Zone:</span> 
+                <span class="value">UTC+3</span><br>
+                
+                <span class="label">Calling Code:</span> 
+                <span class="value">+52</span><br>
+                
+                <span class="label">Internet TLD:</span> 
+                <span class="value">.mx</span>
+            </div>
+            
+            
+            
+        </section>
+        <section class="card weather">
+            <h2>Weather</h2>
+            <svg viewBox="0 0 500 500" xmLns="https://www.w3.org/2000/svg" id="weather-icon">
+                
+            </svg>
 
-        <figure class="temple-1"><img src="images/sandiego-temple.jpg" alt="Temple Name"><figcaption>San Diego Temple</figcaption></figure>
-
+        </section>
     </main>
 
-    <footer class="footer">
-        <p>&copy; <span id="currentyear"></span> David Carrillo, Utah, United States.</p>
-        <p id="lastModified"></p>
+    <footer>
+        <p><span id="currentYear"></span> David Carrillo - Mexico</p>
+        <p class="highlight" id="lastModified"></p>
     </footer>
 
-    <script src="scripts/getdates.js" defer></script>
+    <script>
+        // Set current year
+        document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+        // Set last modified date
+        document.getElementById("lastModified").textContent = "Last modified: " + document.lastModified;
+    </script>
 </body>
 </html>
