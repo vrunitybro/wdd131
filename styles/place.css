@@ -85,22 +85,26 @@ h2 {
         opacity: 0.8;
     }
 
+    .card h2{
+
+    }
+
     .data {
         position: absolute;
-        bottom: 2rem;
+        bottom: 25rem;
         left: 1rem;
     }
 
     .weather {
         position: absolute;
-        bottom: 2rem;
+        bottom: 1rem;
         right: 1rem;
     }
 
     .weather h2::after {
         content: 'clouds';
         position: absolute;
-        right: 3rem;
+        right: 1rem;
         top: 1.25rem;
     }
 
