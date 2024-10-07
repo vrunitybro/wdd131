@@ -1,152 +1,110 @@
-/* General reset */
+:root {
+    --red: rgba(210, 16, 52, 1);
+    --green: rgba(0, 120, 73, 1);
+    --border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+html,
 body {
-    font-family: 'Sansita', sans-serif;
-    background-image: url(images/hero.webp);
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    background-color: var(--red);
 }
 
-/* Header and Navigation */
-header {
-    background-color: #6a0dad; /* Purple background */
-    color: white;
-    padding: 10px;
-    text-align: right;
-}
-.name-place{
+header,
+footer {
+    color: lightblue;
     text-align: center;
+    padding: 1.5rem;
 }
-header h1 {
+
+h1 {
     font-size: 1.5rem;
 }
 
-/* Main Content */
-main {
-    padding: 20px;
-}
-
-main h2 {
-    text-align: center; /* Centering the title */
-    font-size: 2rem;
-    margin-bottom: 20px;
-    grid-column: 1 / -1; /* Span across all columns */
-    grid-row: 1; /* Place the title on the first row */
-}
-
-/* Grid layout for larger screens */
-.main-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-template-rows: auto; /* Allow rows to auto-size */
-    gap: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-.home-title {
-    grid-column: 1 / -1; /* Span across all columns */
-    grid-row: 1; /* Place the title on the first row */
+aside {
+    background-color: var(--green);
+    padding: 1rem;
     text-align: center;
 }
 
-main figure {
-    margin: 0;
-}
-
-main img {
+img {
     width: 100%;
     height: auto;
-    border: 2px solid #ccc;
 }
 
-main figcaption {
-    font-size: 1rem;
-    margin-top: 10px;
+h2 {
+    padding: 1rem;
+}
+
+.card {
+    background-color: white;
+    border-radius: 0.5rem;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.card h2 {
     text-align: center;
 }
 
-/* Temple image grid placement for large screens */
-.temple-1 {
-    grid-column: 1/2;
-    grid-row: 2/3;
-}
-.temple-2 {
-    grid-column: 2/3;
-    grid-row: 2/3;
-}
-.temple-3 {
-    grid-column: 3/4;
-    grid-row: 2/3;
-}
-.temple-4 {
-    grid-column: 1/2;
-    grid-row: 3/4;
-}
-.temple-5 {
-    grid-column: 2/3;
-    grid-row: 3/4;
-}
-.temple-6 {
-    grid-column: 3/4;
-    grid-row: 3/4;
-}
-.temple-7 {
-    grid-column: 1/2;
-    grid-row: 4/5;
-}
-.temple-8 {
-    grid-column: 2/3;
-    grid-row: 4/5;
-}
-.temple-9 {
-    grid-column: 3/4;
-    grid-row: 4/5;
+.col-2 {
+    display: grid;
+    grid-gap: 0.5rem;
+    grid-template-columns: 1fr 1fr;
+    padding: 1rem;
 }
 
-/* Footer */
-footer {
-    background-color: #6a0dad;
-    color: white;
-    text-align: center;
-    padding: 20px;
+.label {
+    font-weight: 700;
+    font-size: 0.85rem;
+    text-align: right;
 }
 
-/* Responsive styles - when screen is less than 768px (mobile) */
-@media (max-width: 768px) {
-    /* Hamburger button visible on small screens */
-    .hamburger {
-        display: block;
+.value {
+    font-size: 0.9rem;
+}
+
+@media (min-width: 750px) {
+    h1 {
+        font-size: 3rem;
     }
 
-    .navbar ul {
-        flex-direction: column;
+    main {
+        position: relative;
+    }
+
+    .card {
+        border: var(--border);
+        box-shadow: 0 0 2rem #000;
+        opacity: 0.8;
+    }
+
+    .data {
+        position: absolute;
+        bottom: 2rem;
+        left: 1rem;
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 2rem;
+        right: 1rem;
+    }
+
+    .weather h2::after {
+        content: 'clouds';
+        position: absolute;
+        right: 3rem;
+        top: 1.25rem;
+    }
+
+    #weather-icon {
         display: none;
-    }
-
-    .navbar ul.open {
-        display: flex;
-    }
-
-    /* How to have grid collapse into a single column */
-    .main-grid {
-        grid-template-columns: 1fr; /* Single column */
-        grid-template-rows: auto; /* Allow rows to size themselves */
-    }
-
-    /* How to make all temple images stack vertically */
-    .temple-1, .temple-2, .temple-3, .temple-4, .temple-5, .temple-6, .temple-7, .temple-8, .temple-9 {
-        grid-column: 1 / -1; /* Make each item span the full width */
-        grid-row: auto; /* Ensure rows are properly placed */
-    }
-
-    /* Center the title for mobile as well */
-    main h2 {
-        text-align: center;
-        font-size: 1.5rem;
-        grid-column: 1 / -1; /* Ensure the title spans the whole width */
     }
 }
