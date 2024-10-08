@@ -10,9 +10,8 @@
     box-sizing: border-box;
 }
 
-html,
 body {
-    font-family: Lato, Arial, Helvetica, sans-serif;
+    font-family: 'Lato', Arial, Helvetica, sans-serif;
     background-color: var(--red);
 }
 
@@ -86,10 +85,6 @@ h2 {
         padding: 1rem;
     }
 
-    .card h2{
-
-    }
-
     .data {
         position: absolute;
         bottom: 19rem;
@@ -103,13 +98,13 @@ h2 {
     }
 
     .weather h2::after {
-        content: 'clouds';
+        content: "😊";
         position: absolute;
         right: 1rem;
         top: 1.25rem;
+        text-align: center;
     }
 
-    /* SVG Icon for Mobile View */
     #weather-icon {
         width: 50px;
         height: 50px;
@@ -117,12 +112,11 @@ h2 {
         margin-bottom: 10px;
     }
 
-    @media (min-width: 750px) {
-        body::after {
-            content: "😊";
-            font-size: 2rem;
-            display: block;
-            text-align: center;
-            margin-top: 10px;
-        }
+    /* body::after {
+        
+        font-size: 2rem;
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+    } */
 }
