@@ -109,7 +109,20 @@ h2 {
         top: 1.25rem;
     }
 
+    /* SVG Icon for Mobile View */
     #weather-icon {
-        display: none;
+        width: 50px;
+        height: 50px;
+        display: block;
+        margin-bottom: 10px;
     }
+
+    @media (min-width: 750px) {
+        body::after {
+            content: "😊";
+            font-size: 2rem;
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+        }
 }
