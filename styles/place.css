@@ -83,6 +83,7 @@ h2 {
         border: var(--border);
         box-shadow: 0 0 2rem #000;
         opacity: 0.8;
+        padding: 1rem;
     }
 
     .card h2{
