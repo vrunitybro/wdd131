@@ -77,8 +77,27 @@ document.addEventListener("DOMContentLoaded", () => {
       dedicated: "1945, September, 25",
       area: 8.28,
       imageUrl:
-      "https://churchofjesuschristtemples.org/assets/img/temples/idaho-falls-idaho-temple/idaho-falls-idaho-temple-1911.jpg"
+      "https://churchofjesuschristtemples.org/assets/img/temples/idaho-falls-idaho-temple/idaho-falls-idaho-temple-53761-thumb.jpg"
     },
+
+    {
+      templeName: "Salt Lake Temple",
+      location: "Salt Lake City, Utah, USA",
+      dedicated: "1893, April, 24",
+      area: 46,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/salt-lake-temple/salt-lake-temple-6816-thumb.jpg"
+    },
+
+    {
+      templeName: "Sacramento California",
+      location: "Rancho Cordova, California, USA",
+      dedicated: "2006, September, 3",
+      area: 8.28,
+      imageUrl:
+      "https://churchofjesuschristtemples.org/assets/img/temples/sacramento-california-temple/sacramento-california-temple-53526-thumb.jpg"
+    },
+    
 
     // Add more temple objects here...
   ];
