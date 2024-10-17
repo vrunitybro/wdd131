@@ -22,4 +22,4 @@ if (tempC <= 10 && speed > 4.8) {
 yearElement.textContent = new Date().getFullYear();
 
 // Set the last modified date in the footer
-lastModifiedElement.textContent = document.lastModified;
+lastModifiedElement.textContent = `Last Modified: ${document.lastModified}`;
