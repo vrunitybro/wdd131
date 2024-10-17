@@ -34,9 +34,10 @@ document.addEventListener("DOMContentLoaded", function () {
     `;
   }
 
-  // Set current year in the footer
-yearElement.textContent = new Date().getFullYear();
-
-// Set the last modified date in the footer
-lastModifiedElement.textContent = document.lastModified;
+// Display the last modified date in the footer
+document.addEventListener("DOMContentLoaded", function() {
+    const lastModifiedElement = document.getElementById("last-modified");
+    const lastModified = document.lastModified;
+    lastModifiedElement.textContent = `Last modified: ${lastModified}`;
+});
   
