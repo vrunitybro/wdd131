@@ -1,0 +1,78 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #0033cc;
+    padding: 10px;
+    text-align: center;
+    color: #ffffff;
+    border-radius: 8px;
+}
+
+/* Main Section Styling */
+main {
+    margin-top: 20px;
+}
+
+h1, h2 {
+    font-family: 'Roboto', sans-serif;
+    color: #0033cc;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+}
+
+section {
+    margin-bottom: 20px;
+    border-left: 5px solid #800080;
+    padding-left: 15px;
+}
+
+/* Typography */
+p {
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+
+/* Wireframe Image Styling */
+.wireframe {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.wireframe-image {
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #800080;
+    border-radius: 8px;
+}
+
+/* Footer */
+footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 0.8em;
+    color: #666666;
+}
