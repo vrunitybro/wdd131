@@ -174,6 +174,4 @@ document.addEventListener("DOMContentLoaded", () => {
   displayTemples(temples);
 });
 
-image.addEventListener('load', () => {
-  console.log(`${temple.templeName} image loaded`);
-});
+
