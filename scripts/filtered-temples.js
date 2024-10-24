@@ -174,5 +174,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   displayTemples(temples);
-}, 5000); // End of setTimeout and 5-second delay
+}, 3000); // End of setTimeout and 5-second delay
 });
