@@ -1,6 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const hamburger = document.getElementById("hamburger");
-  const navMenu = document.querySelector("nav ul");
+  // Set a delay of 5000 milliseconds (5 seconds)
+  setTimeout(() => {
+    const hamburger = document.getElementById("hamburger");
+    const navMenu = document.querySelector("nav ul");
 
   // Hamburger menu functionality
   hamburger.addEventListener("click", () => {
@@ -172,6 +174,5 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
   displayTemples(temples);
+}, 5000); // End of setTimeout and 5-second delay
 });
-
-
