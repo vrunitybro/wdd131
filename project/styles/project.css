@@ -31,6 +31,14 @@ header {
     padding: 20px;
     background: linear-gradient(90deg, var(--palatinate-blue), var(--deep-pink));
     coloR:white
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+    text-shadow: 
+        1px 1px 0px black,  /* Right and down */
+        -1px -1px 0px black, /* Left and up */
+        -1px 1px 0px black,  /* Left and down */
+        1px -1px 0px black;  /* Right and up */
     
     
 }
@@ -56,8 +64,19 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;
+    font-weight: bolder;
+    transition: color 0.3s ease; /* Smooth transition */
+    text-shadow: 
+        1px 1px 0px black,  /* Right and down */
+        -1px -1px 0px black, /* Left and up */
+        -1px 1px 0px black,  /* Left and down */
+        1px -1px 0px black;  /* Right and up */
     
+}
+
+/* Change color on hover */
+nav ul li a:hover {
+    color: lightskyblue; /* New color on hover */
 }
 
 /* Hamburger Menu */
@@ -70,25 +89,36 @@ nav ul li a {
 /* Media Queries */
 @media (max-width: 768px) {
     body {
-        grid-template-columns: 1fr; /* Collapse into a single column layout */
+        grid-template-columns: 1fr;
     }
 
     nav ul {
-        display: none; /* Hidden by default */
-        flex-direction: column; /* Stack vertically */
+        display: none;
+        flex-direction: column;
         position: absolute;
         background: var(--deep-pink);
         top: 60px;
-        left: 0;
+        left: 5; /* Adjusted to align the menu to the left */
         right: 0;
+        padding: 10px; /* Add padding to keep the items within view */
+        margin-left: 3; /* Ensure there is no additional margin pushing the menu out of view */
     }
 
     nav ul.show {
-        display: flex; /* Show on toggle */
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 10px 0; /* Adjust the spacing between menu items */
+    }
+
+    nav ul li a {
+        text-align: left; /* Align the text to the left inside the menu */
+        padding-left: 15px; /* Add some padding to the left for spacing */
     }
 
     .hamburger {
-        display: block; /* Show hamburger on small screens */
+        display: block;
     }
 }
 

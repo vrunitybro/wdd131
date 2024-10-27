@@ -8,23 +8,23 @@ const projects = [
     {
         title: "Mixed Reality Shooter",
         description: "An immersive mixed reality shooting game.",
-        image: "images/project1.png",
-        playLink: "link_to_play_project1",
-        videoLink: "link_to_youtube_video1"
+        image: "images/mrs_oculus.png",
+        playLink: "https://vrunity.itch.io/mrss",
+        videoLink: "https://www.youtube.com/shorts/8Ds4u4n6Uc4"
     },
     {
-        title: "Augmented Reality Positioning",
-        description: "Description of Project 2.",
-        image: "images/project2.png",
-        playLink: "link_to_play_project2",
-        videoLink: "link_to_youtube_video2"
+        title: "VR Gallery",
+        description: "Explore a VR museum.",
+        image: "images/vrgallery.png",
+        playLink: "https://vrunity.itch.io/vr-museum",
+        videoLink: "https://www.youtube.com/watch?v=r9HY8bDRRfQ"
     },
     {
-        title: "Virtual Department Tour",
-        description: "Description of Project 3.",
-        image: "images/project3.png",
-        playLink: "link_to_play_project3",
-        videoLink: "link_to_youtube_video3"
+        title: "VR Apartment",
+        description: "A VR tour on your favorite aparment.",
+        image: "images/vrtour.png",
+        playLink: "https://vrunity.itch.io/vr-house-tour",
+        videoLink: "https://www.youtube.com/watch?v=ek7mkt21hOM"
     }
 ];
 
