@@ -3,22 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This page showcases David Carrillo's work XR Developer Portfolio.">
+    <meta name="author" content="David Carrillo">
     <title>VR Unity Portfolio Site Plan</title>
     <link rel="stylesheet" href="styles/siteplan-styles.css">
 </head>
 <body>
     <header>
-        <h1>VR Unity Portfolio Site Plan</h1>
+        <div class="logo-container">
+            <img src="images/vrunityProfile_2.jpg" alt="David Carrillo Logo">
+        </div>
+        <h1>David Carrillo 🕹️</h1>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <ul>
+                <li><a href="project.html">Home</a></li>
+                <li><a href="projects-subpage.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="siteplan.html">Site Plan</a></li>
+            </ul>
+        </nav>
     </header>
+
     <main>
         <section>
             <h2>Site Name</h2>
             <p>VRUnityPortfolio</p>
-            <p>This name represents a portfolio site focused on showcasing my Virtual Reality (VR), Mixed Reality (MR), and Augmented Reality (AR) projects, aiming to engage potential customers or employers interested in immersive experiences. Domain availability (optional): vrunityportfolio.com</p>
+            <p>This name represents a portfolio site focused on showcasing my Virtual Reality (VR), Mixed Reality (MR), and Augmented Reality (AR) projects...</p>
         </section>
         <section>
             <h2>Site Purpose</h2>
-            <p>The purpose of the site is to provide a comprehensive portfolio that highlights my VR, MR, and AR projects. The site will contain information about each project, including demos, videos, and descriptions to showcase skills and experiences. The site will also provide a contact page for potential collaborations or job offers.</p>
+            <p>The purpose of the site is to provide a comprehensive portfolio that highlights my VR, MR, and AR projects...</p>
         </section>
         <section>
             <h2>Scenarios</h2>
@@ -31,11 +46,14 @@
             <h2>Color Schema</h2>
             <p>The selected color scheme includes:</p>
             <ul>
-                <li><strong>Blue:</strong> #0033cc - used for headings and links.</li>
-                <li><strong>White:</strong> #ffffff - used for the background.</li>
-                <li><strong>Purple:</strong> #800080 - used as accent colors for buttons and borders.</li>
+                <li><strong>Palatinate Blue:</strong> <code>--palatinate-blue: #0F33D4;</code> - used for primary elements.</li>
+                <li><strong>Medium Blue:</strong> <code>--medium-blue: #5680F3;</code> - used for headings and links.</li>
+                <li><strong>White:</strong> <code></code> - used for headings and links.</li>
+                <li><strong>Deep Pink:</strong> <code>--deep-pink: #FA1B98;</code> - used for accent colors.</li>
+                <li><strong>Eerie Black:</strong> <code>--eerie-black: #1A1A1A;</code> - used for backgrounds and text.</li>
             </ul>
         </section>
+        
         <section>
             <h2>Typography</h2>
             <p>Fonts used:</p>
@@ -48,13 +66,16 @@
             <h2>Wireframe</h2>
             <p>Below is a sketch of the wireframe layout for both mobile and desktop views:</p>
             <div class="wireframe">
-                <img src="wireframe-mobile.jpg" alt="Wireframe for mobile view" class="wireframe-image">
-                <img src="wireframe-desktop.jpg" alt="Wireframe for desktop view" class="wireframe-image">
+                <img src="images/wireframe-mobile.jpg" alt="Wireframe for mobile view">
+                <img src="images/wireframe-desktop.jpg" alt="Wireframe for desktop view">
             </div>
         </section>
     </main>
+
     <footer>
-        <p>Created by David Carrillo</p>
+        <p>&copy; 2024 🎮 David Carrillo 🎮. Utah, USA</p>
     </footer>
+
+    <script src="scripts/siteplan.js"></script>
 </body>
 </html>

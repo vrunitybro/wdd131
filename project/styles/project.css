@@ -30,7 +30,7 @@ header {
     justify-content: space-between;
     padding: 20px;
     background: linear-gradient(90deg, var(--palatinate-blue), var(--deep-pink));
-    coloR:white
+    coloR:white;
     text-decoration: none;
     color: white;
     font-weight: bolder;
@@ -259,4 +259,8 @@ h2 {
 
 #projects{
     color:white
+}
+
+.siteplan{
+    color: aquamarine;
 }
